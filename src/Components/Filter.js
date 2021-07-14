@@ -35,7 +35,7 @@ const Filter = ({ title, rate, modalShow }) => {
               />
               <StarRatingComponent
                 name="star"
-                starCount={5}
+                starCount={7}
                 onStarClick={(r) => rate(r)}
               />
             </div>

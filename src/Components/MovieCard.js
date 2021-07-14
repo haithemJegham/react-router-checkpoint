@@ -17,7 +17,7 @@ const MovieCard = ({myimage,stars,title,text}) => {
           <Card.Body>
             <ReactStars
               name="star3"             
-              starCount={5}
+              starCount={7}
               editing={false}
               value={stars}
             />

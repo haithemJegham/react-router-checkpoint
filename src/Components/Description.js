@@ -7,21 +7,26 @@ import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
-/* const Description = ({ location, match }) => { */
-  const Description = ({ Movies, match }) => {
-  /* const film = location.state.list.find((elm) => elm.id === match.params.id); */
+const Description = ({ Movies, match }) => {
   const film = Movies.find((elm) => elm.id === match.params.id);
+  console.log(film);
 
   return (
     <div>
-      <Navbar bg="dark" expand="lg">
-        
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto"></Nav>
-          <Form inline></Form>
-        </Navbar.Collapse>
-      </Navbar>
+      
+            
+            
+            
+      <Navbar  bg="dark" expand="lg"> 
+      <Link to="/">
+      <Button className="home" >HOME</Button> 
+      
+      </Link>
+      
+      <h1  style={{ color: "white" }} >{film.title}</h1> 
+              </Navbar>
+      
+      
       <div className="desc-2">
         <Card.Img src={film.img} alt="moviePoster" className="poster" />
         <div className="desc-1">
